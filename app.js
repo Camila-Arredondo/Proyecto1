@@ -10,13 +10,13 @@ app.get('/hello', (req, res) => {
     // handle the request
     console.log("llego get");
 
-    res.send('Hola v2')
+    res.send('Hola v3')
   });
   
   app.post('/hello', (req, res) => {
     const nombre= req.body.nombre;
     console.log("llego post");
-    res.send('Hola v2 ' + nombre)
+    res.send('Hola v3 ' + nombre)
   });
 
   //para iniciar la app
