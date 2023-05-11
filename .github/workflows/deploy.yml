@@ -17,7 +17,7 @@ jobs:
       - name: Configurar el entorno de Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v1.1.1
         with:
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
           project_id: proyecto1-386420
 
       - name: Configurar Docker
