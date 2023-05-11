@@ -15,10 +15,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Configurar el entorno de Google Cloud SDK
-        uses: google-github-actions/setup-gcloud@v1.1.1
+        uses: 'google-github-actions/auth@v1'
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
-          project_id: proyecto1-386420
 
       - name: Configurar Docker
         uses: docker/setup-buildx-action@v1
